@@ -1,0 +1,25 @@
+{
+  "name": "chest",
+  "version": "0.0.1",
+  "description": "Put your config files",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require enable_power_assert.js ./spec/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/watilde/chest.git"
+  },
+  "keywords": [
+    "chest",
+    "bower",
+    "component",
+    "package"
+  ],
+  "author": "Daijiro Wachi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/watilde/chest/issues"
+  },
+  "homepage": "https://github.com/watilde/chest"
+}
