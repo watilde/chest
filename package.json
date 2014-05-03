@@ -2,7 +2,7 @@
   "name": "chest",
   "version": "0.0.0",
   "description": "Put your config files",
-  "main": "index.js",
+  "main": "lib/main.js",
   "scripts": {
     "test": "mocha --require power_assert.js ./spec/*.js"
   },
