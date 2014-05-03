@@ -4,7 +4,7 @@
   "description": "Put your config files",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require enable_power_assert.js ./spec/*.js"
+    "test": "mocha --require power_assert.js ./spec/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/watilde/chest/issues"
   },
-  "homepage": "https://github.com/watilde/chest"
+  "homepage": "https://github.com/watilde/chest",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "espower-loader": "^0.6.0",
+    "mocha": "^1.18.2",
+    "power-assert": "^0.6.1"
+  }
 }
