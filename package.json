@@ -1,6 +1,6 @@
 {
   "name": "chest",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Put your config files",
   "main": "index.js",
   "scripts": {
