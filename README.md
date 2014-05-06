@@ -1,6 +1,6 @@
 # Chest
 
-Put config files!
+Put your config files
 
 ## Install
 
@@ -14,7 +14,7 @@ Confirm.
 
 ## Usage
 
-    chest usage              Show this message
+    chest usage            Show this message
     chest put <file>       Put config file to chest
     chest stow <file>      Stow config file to chest with gitignore
     chest glance           List of config files in the chest
