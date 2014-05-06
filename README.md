@@ -10,7 +10,7 @@ Using npm.
 
 Confirm.
 
-    $ tvm chest
+    $ chest usage
 
 ## Usage
 
