@@ -16,7 +16,6 @@ Confirm.
 
     chest usage            Show this message
     chest put <file>       Put config file to chest
-    chest push <file>      Push config file to chest with gitignore
     chest list             List of config files in the chest
     chest open             Take config files to project root
     chest boost            Using all of config file like install
