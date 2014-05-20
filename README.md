@@ -18,5 +18,5 @@ Confirm.
     chest put <file>       Put config file to chest
     chest list             List of config files in the chest
     chest open             Take config files to project root
-    chest boost            Using all of config file like install
+    chest install          Install every config files if it can be
     chest close            Remove config files if it's same with chest's one
