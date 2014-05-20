@@ -32,6 +32,7 @@
     "power-assert": "^0.6.1"
   },
   "dependencies": {
-    "diff": "^1.0.8"
+    "diff": "^1.0.8",
+    "colors": "^0.6.2"
   }
 }
