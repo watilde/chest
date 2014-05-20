@@ -1,6 +1,6 @@
 # Chest
 
-Put specified config file in chest
+Put your config files in chest
 
 ## Install
 

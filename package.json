@@ -1,7 +1,7 @@
 {
   "name": "chest",
   "version": "0.0.6",
-  "description": "Put your config files",
+  "description": "Put your config files in chest",
   "main": "lib/main.js",
   "bin": {
     "chest": "./bin/chest.js"
