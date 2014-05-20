@@ -27,6 +27,7 @@
   "homepage": "https://github.com/watilde/chest",
   "devDependencies": {
     "chai": "^1.9.1",
+    "diff": "^1.0.8",
     "espower-loader": "^0.6.0",
     "mocha": "^1.18.2",
     "power-assert": "^0.6.1"
