@@ -1,6 +1,6 @@
 # Chest
 
-Put your config files
+Put specified config file in chest
 
 ## Install
 
@@ -15,8 +15,8 @@ Confirm.
 ## Usage
 
     chest usage            Show this message
-    chest put <file>       Put config file to chest
-    chest list             List of config files in the chest
-    chest open             Take config files to project root
-    chest install          Install every config files if it can be
-    chest close            Remove config files if it's same with chest's one
+    chest put <file>       Put specified config file in the chest
+    chest list             Show list of config files in the chest
+    chest open             Place config files from the chest into the project root as symbolic links
+    chest install          Install all supported config files
+    chest close            Remove symbolic links created by "open"
