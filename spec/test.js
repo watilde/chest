@@ -11,22 +11,25 @@ describe('chest', function() {
       fs.rmdirSync('.chest');
     }
   });
-  it('put dummy config_file', function(done) {
+  it('put dummy config_file', function() {
     chest.put([dummy_file_name]);
-    exec('ls .chest', function (err, stdout, stderr) {
-      var files = stdout.split('\n');
-      assert.notEqual(files.indexOf(dummy_file_name), -1);
-      done();
-    });
+    var files = fs.readdirSync('./.chest');
+    assert.notEqual(files.indexOf(dummy_file_name), -1);
   });
-
-  it('take dummy config_file', function(done) {
+  it('open config_file', function() {
+    chest.open();
+    var files = fs.readdirSync('./');
+    assert.notEqual(files.indexOf(dummy_file_name), -1);
+  });
+  it('close config_file', function() {
+    chest.close();
+    var files = fs.readdirSync('./');
+    assert.equal(files.indexOf(dummy_file_name), -1);
+  });
+  it('take dummy config_file', function() {
     chest.take([dummy_file_name]);
-    exec('ls', function (err, stdout, stderr) {
-      var files = stdout.split('\n');
-      assert.notEqual(files.indexOf(dummy_file_name), -1);
-      done();
-    });
+    var files = fs.readdirSync('./');
+    assert.notEqual(files.indexOf(dummy_file_name), -1);
   });
   after(function() {
     if (fs.existsSync('.chest')) {
