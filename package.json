@@ -7,6 +7,7 @@
     "chest": "./bin/chest.js"
   },
   "scripts": {
+    "postinstall": "./bin/chest.js open",
     "test": "mocha --require power_assert.js ./spec/*.js"
   },
   "repository": {
