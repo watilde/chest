@@ -1,6 +1,6 @@
 {
   "name": "chest",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Put your config files in chest",
   "main": "lib/main.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "postinstall": "./bin/chest.js open",
-    "test": "mocha --require power_assert.js ./spec/*.js"
+    "test": "cd spec; mocha --require ../power_assert.js test.js"
   },
   "repository": {
     "type": "git",
