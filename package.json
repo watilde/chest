@@ -1,6 +1,6 @@
 {
   "name": "chest",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "The easy meta file manager",
   "main": "lib/main.js",
   "bin": {
@@ -21,7 +21,7 @@
     "package"
   ],
   "author": "Daijiro Wachi",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/chest/chest/issues"
   },
