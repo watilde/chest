@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/watilde/chest.png?branch=master)](https://travis-ci.org/watilde/chest)
 
-Put your config files in chest
+The easy meta file manager
 
 ## Install
 
