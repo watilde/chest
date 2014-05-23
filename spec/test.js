@@ -3,7 +3,7 @@ var fs     = require('fs');
 var exec   = require('child_process').exec;
 var assert = require('power-assert');
 var chest  = require('../lib/main');
-var dummy_file_name = 'config_file';
+var dummy_file_name = 'metafile';
 
 describe('chest', function() {
   before(function() {
