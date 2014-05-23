@@ -1,6 +1,6 @@
 {
   "name": "chest",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "The easy meta file manager",
   "main": "lib/main.js",
   "bin": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/chest/chest.git"
+    "url": "git://github.com/watilde/chest.git"
   },
   "keywords": [
     "chest",
@@ -23,7 +23,7 @@
   "author": "Daijiro Wachi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chest/chest/issues"
+    "url": "https://github.com/watilde/chest/issues"
   },
   "homepage": "http://chestjs.com",
   "devDependencies": {
