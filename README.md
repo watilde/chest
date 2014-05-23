@@ -1,6 +1,7 @@
 # Chest
 
-[![Build Status](https://travis-ci.org/watilde/chest.png?branch=master)](https://travis-ci.org/watilde/chest)
+[![Build Status](https://api.travis-ci.org/watilde/chest.svg)](https://travis-ci.org/watilde/chest) [![Dependency Status](https://gemnasium.com/watilde/chest.svg)](https://gemnasium.com/watilde/chest)
+
 
 The easy meta file manager
 
