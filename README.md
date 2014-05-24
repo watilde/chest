@@ -28,7 +28,7 @@ Confirm.
 
 ## Sample
 ### package.json
-Make bower and component install easy to use with `post install`:
+Make bower and component install easy to use with `postinstall`:
 ```
 {
   "scripts": {
