@@ -1,13 +1,12 @@
 {
   "name": "chest",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "The easy metafile manager",
   "main": "lib/main.js",
   "bin": {
     "chest": "./bin/chest.js"
   },
   "scripts": {
-    "postinstall": "./bin/chest.js postinstall",
     "test": "cd spec; mocha --require ../power_assert.js test.js"
   },
   "repository": {
