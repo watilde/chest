@@ -30,6 +30,19 @@ Confirm.
     chest close        Remove symbolic links created by "open"
 
 ## Sample
+### chest put <file>
+Put metafile in the chest
+```
+$ cat bower.json
+{
+  "devDependencies": {
+      "bootstrap": "~3.1.1"
+  }
+}
+
+$ chest put bower.json
+```
+
 ### package.json
 Make bower and component install easy to use with `postinstall`:
 ```
