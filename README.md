@@ -25,3 +25,35 @@ Confirm.
     chest install      Install all supported config files in the chest
     chest postinstall  Open and install
     chest close        Remove symbolic links created by "open"
+
+## Sample
+### package.json
+Make bower and component install easy to use with `post install`:
+```
+{
+  "scripts": {
+    "postinstall": "chest postinstall",
+    "test": "mocha test/*.js"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chest": "*"
+  },
+}
+```
+### npm install
+Then if `bower.json` is in the chest, `bower install` is executed after `npm install`:
+```
+$ npm install
+/path/to/your/repository$ npm install
+
+> chest@0.1.0 postinstall /path/to/your/repository
+> ./bin/chest.js postinstall
+
+bower bootstrap#~3.1.1    cached git://github.com/twbs/bootstrap.git#3.1.1
+bower bootstrap#~3.1.1    validate 3.1.1 against git://github.com/twbs/bootstrap.git#~3.1.1
+bower jquery#>= 1.9.0     cached git://github.com/jquery/jquery.git#2.1.1
+bower jquery#>= 1.9.0     validate 2.1.1 against git://github.com/jquery/jquery.git#>= 1.9.0
+bower bootstrap#~3.1.1    install bootstrap#3.1.1
+bower jquery#>= 1.9.0     install jquery#2.1.1
+```
