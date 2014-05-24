@@ -45,9 +45,8 @@ Make bower and component install easy to use with `postinstall`:
 Then if `bower.json` is in the chest, `bower install` is executed after `npm install`:
 ```
 $ npm install
-/path/to/your/repository$ npm install
 
-> chest@0.1.0 postinstall /path/to/your/repository
+> chest@0.1.0
 > ./bin/chest.js postinstall
 
 bower bootstrap#~3.1.1    cached git://github.com/twbs/bootstrap.git#3.1.1
