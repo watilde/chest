@@ -110,6 +110,10 @@ body {
   font-weight: bold;
 }
 
+.cover .carousel-inner .item {
+  border: 1px solid #BABABA;
+}
+
 
 /*
  * Footer
