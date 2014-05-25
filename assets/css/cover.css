@@ -1,27 +1,20 @@
-/*
- * Globals
- */
-
-*{
-  font-weight: normal;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 /* Links */
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #EC008C;
 }
 
-/* Custom default button */
 .btn-default,
-.btn-default:hover,
 .btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
+  color: #EC008C;
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #EC008C;
+}
+.btn-default:hover{
+  color: #fff;
+  background-color: #EC008C;
+  border: 1px solid #EC008C;
 }
 
 
@@ -32,11 +25,9 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
-  color: #fff;
+  background-color: #fff;
+  color: #EC008C;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -60,41 +51,9 @@ body {
   padding: 15px;
 }
 
-
-/*
- * Header
- */
-.masthead-nav > li {
-  display: inline-block;
-}
-.masthead-nav > li + li {
-  margin-left: 40px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: rgba(255,255,255,.25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
 /*
  * Cover
  */
-
 .cover {
   padding: 0 20px;
 }
@@ -102,7 +61,7 @@ body {
   font-size: 35px;
 }
 .cover .lead {
-  color: rgba(255,255,255,.5);
+  color: #888;
   font-size: 25px;
 }
 .cover .btn-lg {
@@ -110,18 +69,12 @@ body {
   font-weight: bold;
 }
 
-.cover .carousel-inner .item {
-  border: 1px solid #BABABA;
-}
-
-
 /*
  * Footer
  */
 
 .mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+  color: #888;
 }
 
 
@@ -132,7 +85,7 @@ body {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: absolute;
     top: 0;
   }
   .mastfoot {
