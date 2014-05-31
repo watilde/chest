@@ -16,19 +16,77 @@
     <div class="cover-container">
       <div class="inner cover">
         <h1 class="cover-heading">chest.js</h1>
-        <pre style="text-align: left;">
-$ ls -a
-  component.json
-$ chest put component.json
-  [?] Add component.json to gitignore on the project root: (Y/n) Y
-$ ls -a
-  .chest .gitignore
-$ chest open
-$ ls -a
-  .chest .gitignore component.json
-$ chest install // => component install</pre>
         <p class="lead">The easy metafile manager</p>
+        <p>
+          <img src="http://img.shields.io/npm/v/chest.svg" alt="NPM Version" />
+          <img src="https://api.travis-ci.org/watilde/chest.svg" alt="Build Status" />
+          <img src="https://gemnasium.com/watilde/chest.svg" alt="Dependency Status" />
+        </p>
+        <hr>
+        <div class="text-left">
+          <h2>Install</h2>
+          <p>Using npm.<p>
+          <pre>$ npm install -g chest</pre>
+          <p>Confirm.<p>
+          <pre>$ chest usage</pre>
+        </div>
+        <hr>
+        <div class="text-left">
+          <h2>Usage</h2>
+          <pre>
+chest usage       Show this message
+chest put <file>  Put specified config file in the chest
+chest take <file> Take specified config file from the chest into the project root
+chest list        Show list of config files in the chest
+chest open        Place config files from the chest into the root as sym-links
+chest install     Install all supported config files in the chest
+chest postinstall Open and install
+chest close       Remove symbolic links created by "open"</pre>
+        </div>
+        <hr>
+        <div class="text-left">
+          <h2>Example</h2>
+          <p class="lead">chest put <file></p>
+          <p>Put metafile in the chest</p>
+          <pre>
+$ cat bower.json
+{
+  "devDependencies": {
+      "bootstrap": "~3.1.1"
+  }
+}
+
+$ chest put bower.json</pre>
+          <p class="lead">package.json</p>
+          <p>Make bower and component install easy to use with 'postinstall':</p>
+          <pre>
+{
+  "scripts": {
+    "postinstall": "chest postinstall",
+    "test": "mocha test/*.js"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chest": "*"
+  },
+}</pre>
+        <p class="lead">npm install</p>
+        <p>Then if 'bower.json' is in the chest, 'bower install' is executed after 'npm install':</p>
+        <pre>
+$ npm install
+
+> chest@0.1.0
+> ./bin/chest.js postinstall
+
+bower bootstrap#~3.1.1    cached git://github.com/twbs/bootstrap.git#3.1.1
+bower bootstrap#~3.1.1    validate 3.1.1 against git://github.com/twbs/bootstrap.git#~3.1.1
+bower jquery#>= 1.9.0     cached git://github.com/jquery/jquery.git#2.1.1
+bower jquery#>= 1.9.0     validate 2.1.1 against git://github.com/jquery/jquery.git#>= 1.9.0
+bower bootstrap#~3.1.1    install bootstrap#3.1.1
+bower jquery#>= 1.9.0     install jquery#2.1.1</pre>
+        </div>
       </div>
+      <hr>
       <div class="mastfoot">
         <div class="inner">
           <p>Made by <a href="https://github.com/watilde">@watilde</a>.</p>

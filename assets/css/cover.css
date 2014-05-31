@@ -89,7 +89,7 @@ body {
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position: static;
     bottom: 0;
   }
   /* Start the vertical centering */
