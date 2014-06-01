@@ -4,7 +4,9 @@ a:focus,
 a:hover {
   color: #EC008C;
 }
-
+h1 {
+  margin-bottom: 5px;
+}
 .btn-default,
 .btn-default:focus {
   color: #EC008C;
@@ -16,7 +18,9 @@ a:hover {
   background-color: #EC008C;
   border: 1px solid #EC008C;
 }
-
+p {
+  color: #888;
+}
 
 /*
  * Base structure
@@ -63,6 +67,7 @@ body {
 .cover .lead {
   color: #888;
   font-size: 25px;
+  margin: 0;
 }
 .cover .btn-lg {
   padding: 10px 20px;
