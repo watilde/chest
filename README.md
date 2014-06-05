@@ -21,14 +21,14 @@ Confirm.
 
 ## Usage
 
-    chest usage        Show this message
-    chest put <file>   Put specified config file in the chest
-    chest take <file>  Take specified config file from the chest into the project root
-    chest list         Show list of config files in the chest
-    chest open         Place config files from the chest into the project root as symbolic links
-    chest install      Install all supported config files in the chest
-    chest postinstall  Open and install
-    chest close        Remove symbolic links created by "open"
+    chest usage       Show this message
+    chest put <file>  Put specified config file in the chest
+    chest take <file> Take specified config file from the chest into the project root
+    chest list        Show list of config files in the chest
+    chest open        Place config files from the chest into the project root as symbolic links
+    chest install     Install all supported config files in the chest
+    chest boost       Open and install
+    chest close       Remove symbolic links created by "open"
 
 ## Sample
 ### chest put <file>
@@ -49,7 +49,7 @@ Make bower and component install easy to use with `postinstall`:
 ```
 {
   "scripts": {
-    "postinstall": "chest postinstall",
+    "postinstall": "chest boost",
     "test": "mocha test/*.js"
   },
   "devDependencies": {
@@ -64,7 +64,7 @@ Then if `bower.json` is in the chest, `bower install` is executed after `npm ins
 $ npm install
 
 > chest@0.1.0
-> ./bin/chest.js postinstall
+> ./bin/chest.js boost
 
 bower bootstrap#~3.1.1    cached git://github.com/twbs/bootstrap.git#3.1.1
 bower bootstrap#~3.1.1    validate 3.1.1 against git://github.com/twbs/bootstrap.git#~3.1.1
