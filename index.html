@@ -40,9 +40,8 @@ chest take     Take specified config file from the chest into the project root
 chest list     Show list of config files in the chest
 chest open     Place config files from the chest into the root as sym-links
 chest install  Install all supported config files in the chest
-chest close    Remove symbolic links created by "open"
--------------------------------------------------------------------------------
-chest postinstall Open and install</pre>
+chest boost    Open and install
+chest close    Remove symbolic links created by "open"</pre>
         </div>
         <hr>
         <div class="text-left">
@@ -63,7 +62,7 @@ $ chest put bower.json</pre>
           <pre>
 {
   "scripts": {
-    "postinstall": "chest postinstall",
+    "postinstall": "chest boost",
     "test": "mocha test/*.js"
   },
   "devDependencies": {
@@ -76,8 +75,8 @@ $ chest put bower.json</pre>
         <pre>
 $ npm install
 
-> chest@0.1.0
-> ./bin/chest.js postinstall
+> chest@0.1.3
+> ./bin/chest.js boost
 
 bower bootstrap#~3.1.1 cached git://github.com/twbs/bootstrap.git#3.1.1
 bower bootstrap#~3.1.1 validate 3.1.1 against git://github.com/twbs/bootstrap.git#~3.1.1
