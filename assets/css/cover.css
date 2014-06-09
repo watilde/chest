@@ -12,6 +12,7 @@ h1 {
 
 p {
   color: #888;
+  font-weight: 200;
 }
 
 /*
@@ -58,7 +59,7 @@ body {
 }
 .cover .lead {
   color: #666;
-  font-size: 20px;
+  font-size: 15px;
   margin: 0;
 }
 .cover .btn-lg {
@@ -84,6 +85,11 @@ body {
 /*
  * Important
  */
+h2 {
+  font-weight: 200 !important;
+  font-size: 25px;
+}
+
 .description {
   font-size: 30px !important;
 }
