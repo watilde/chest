@@ -2,22 +2,14 @@
 a,
 a:focus,
 a:hover {
-  color: #EC008C;
+  color: #2b1609;
 }
+
 h1 {
+  margin-top: 50px;
   margin-bottom: 5px;
 }
-.btn-default,
-.btn-default:focus {
-  color: #EC008C;
-  background-color: #fff;
-  border: 1px solid #EC008C;
-}
-.btn-default:hover{
-  color: #fff;
-  background-color: #EC008C;
-  border: 1px solid #EC008C;
-}
+
 p {
   color: #888;
 }
@@ -30,7 +22,7 @@ html,
 body {
   height: 100%;
   background-color: #fff;
-  color: #EC008C;
+  color: #2b1609;
   text-align: center;
 }
 
@@ -66,12 +58,18 @@ body {
 }
 .cover .lead {
   color: #666;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
 }
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
+}
+.row {
+  margin: 0;
+}
+.col-md-8, .col-md-4, .col-md-6 {
+  padding: 0;
 }
 
 /*
@@ -84,35 +82,18 @@ body {
 
 
 /*
- * Affix and center
+ * Important
  */
-
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: absolute;
-    top: 0;
-  }
-  .mastfoot {
-    position: static;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
+.description {
+  font-size: 30px !important;
 }
 
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
+.float-left {
+  float: left !important;
+}
+
+.masthead,
+.mastfoot,
+.cover-container {
+    width: 700px !important;
 }
