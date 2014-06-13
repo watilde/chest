@@ -2,7 +2,7 @@
 a,
 a:focus,
 a:hover {
-  color: #2b1609;
+  color: #f0f;
 }
 
 h1 {
@@ -14,8 +14,9 @@ h1 {
 }
 
 p {
-  color: #888;
+  color: #2b1609;
   font-weight: 200;
+  font-size: 16px;
 }
 
 /*
