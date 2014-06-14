@@ -1,24 +1,3 @@
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #f0f;
-}
-
-h1 {
-  font-size: 45px;
-  margin-bottom: 5px;
-  text-shadow: 1px 1px 0px #aaa,
-    2px 2px 0px #aaa,
-      3px 3px 0px #777;
-}
-
-p {
-  color: #2b1609;
-  font-weight: 200;
-  font-size: 16px;
-}
-
 /*
  * Base structure
  */
@@ -28,7 +7,54 @@ body {
   height: 100%;
   background-color: #fff;
   color: #2b1609;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #f0f;
+}
+
+/* Typography */
+
+.logo {
+  font-size: 100px;
+  line-height: 1.0;
+  margin-bottom: 15px;
+}
+
+.hlh2{
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 28px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #2b1609;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+/* Basic Layout */
+.taC{
   text-align: center;
+}
+
+.flL{
+  float: left;
+}
+
+.cst{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -47,26 +73,24 @@ body {
   margin-left: auto;
 }
 
-/* Padding for spacing */
-.inner {
-  padding: 15px;
-}
-
 /*
  * Cover
  */
-.cover {
-  padding: 0 20px;
+
+.cover-heading {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom:1px solid #ccc;
+
 }
-.cover .cover-heading {
-  font-size: 35px;
-}
-.cover .lead {
+.lead {
   color: #666;
   font-size: 15px;
   margin: 0;
 }
-.cover .btn-lg {
+.btn-lg {
   padding: 10px 20px;
   font-weight: bold;
 }
@@ -85,28 +109,10 @@ body {
   color: #888;
 }
 
-
-/*
- * Important
- */
-h2 {
-  font-weight: 200 !important;
-  font-size: 25px;
-}
-
-.description {
-  font-weight: 200 !important;
-  font-size: 25px !important;
-}
-
-.float-left {
-  float: left !important;
-}
-
 .masthead,
 .mastfoot,
 .cover-container {
-    width: 700px !important;
+    width: 700px;
 }
 
 
