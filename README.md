@@ -73,3 +73,11 @@ bower jquery#>= 1.9.0     validate 2.1.1 against git://github.com/jquery/jquery.
 bower bootstrap#~3.1.1    install bootstrap#3.1.1
 bower jquery#>= 1.9.0     install jquery#2.1.1
 ```
+
+## Contributing
+
+Fork it
+Create your feature branch (git checkout -b my-new-feature)
+Commit your changes (git commit -am 'Added some feature')
+Push to the branch (git push origin my-new-feature)
+Create new Pull Request
