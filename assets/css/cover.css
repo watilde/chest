@@ -97,6 +97,9 @@ p {
 .row {
   margin: 0;
 }
+pre {
+  margin: 10px auto;
+}
 .col-md-8, .col-md-4, .col-md-6 {
   padding: 0;
 }
