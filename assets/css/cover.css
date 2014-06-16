@@ -52,6 +52,7 @@ p {
 }
 
 .flR {
+  float: right;
 }
 
 .cst{
@@ -76,7 +77,7 @@ p {
   margin-left: auto;
 }
 .chest {
-  height: 220px;
+  height: 250px;
 }
 
 /*
@@ -107,6 +108,9 @@ pre {
 }
 .col-md-8, .col-md-4, .col-md-6 {
   padding: 0;
+}
+.col-md-7 {
+  width: 58.33333333% !important;
 }
 
 /*
