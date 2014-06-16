@@ -51,6 +51,9 @@ p {
   float: left;
 }
 
+.flR {
+}
+
 .cst{
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -72,11 +75,13 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
+.chest {
+  height: 220px;
+}
 
 /*
  * Cover
  */
-
 .cover-heading {
   text-align: center;
   padding-top: 10px;
