@@ -1,6 +1,6 @@
 # chest
 
-The easy metafile manager
+The Easy Metafile Manager
 
 ## Badges
 + [![NPM Version](http://img.shields.io/npm/v/chest.svg)](https://www.npmjs.org/package/chest)
