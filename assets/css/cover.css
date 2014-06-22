@@ -9,6 +9,10 @@ body {
   color: #2b1609;
 }
 
+body {
+  border-top: 5px solid #2b1609;
+}
+
 /* Links */
 a,
 a:focus,
