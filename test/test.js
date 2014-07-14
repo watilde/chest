@@ -5,6 +5,7 @@ var assert = require('power-assert');
 var chest  = require('../lib/main');
 var dummy_file_name = 'metafile';
 var dummy_chest_json = 'chest.json';
+var silent = true;
 
 describe('chest', function() {
   before(function() {
@@ -13,12 +14,12 @@ describe('chest', function() {
     }
   });
   it('put dummy config_file', function() {
-    chest.put([dummy_file_name]);
+    chest.put([dummy_file_name], silent);
     var files = fs.readdirSync('./.chest');
     assert.notEqual(files.indexOf(dummy_file_name), -1);
   });
   it('put dummy chest.json', function() {
-    chest.put([dummy_chest_json]);
+    chest.put([dummy_chest_json], silent);
     var files = fs.readdirSync('./.chest');
     assert.notEqual(files.indexOf(dummy_chest_json), -1);
   });
