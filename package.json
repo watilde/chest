@@ -1,6 +1,6 @@
 {
   "name": "chest",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "The easy metafile manager",
   "main": "lib/main.js",
   "bin": {
@@ -32,9 +32,10 @@
     "power-assert": "^0.7.2"
   },
   "dependencies": {
-    "diff": "^1.0.8",
-    "colors": "^0.6.2",
     "async": "^0.9.0",
-    "inquirer": "^0.6.0"
+    "colors": "^0.6.2",
+    "diff": "^1.0.8",
+    "inquirer": "^0.6.0",
+    "underscore": "^1.6.0"
   }
 }

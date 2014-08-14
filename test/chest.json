@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "answer": {
+      "usage": "The answer to life the universe and everything",
+      "run": "touch 42"
+    }
+  }
+}

@@ -29,6 +29,8 @@ Confirm.
     chest install     Install all supported config files in the chest
     chest boost       Open and install
     chest close       Remove symbolic links created by "open"
+    chest scripts      Show list of chest-run-scripts
+    chest run <script> Run chest-run-scripts
 
 ## Sample
 ### chest put <file>
