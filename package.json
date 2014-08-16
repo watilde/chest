@@ -36,6 +36,7 @@
     "colors": "^0.6.2",
     "diff": "^1.0.8",
     "inquirer": "^0.6.0",
-    "underscore": "^1.6.0"
+    "underscore": "^1.6.0",
+    "update-notifier": "^0.2.0"
   }
 }
