@@ -31,6 +31,7 @@ Confirm.
     chest close       Remove symbolic links created by "open"
     chest scripts      Show list of chest-run-scripts
     chest run <script> Run chest-run-scripts
+    chest sync         Sync meta info name, description and version
 
 ## Sample
 ### chest put <file>
