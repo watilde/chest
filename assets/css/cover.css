@@ -4,6 +4,8 @@
 
 html,
 body {
+  width: 100%;
+  min-width: 700px;
   height: 100%;
   background-color: #fff;
   color: #2b1609;
