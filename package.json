@@ -27,7 +27,7 @@
   "homepage": "http://chestjs.com",
   "devDependencies": {
     "chai": "^1.9.2",
-    "espower-loader": "^0.9.0",
+    "espower-loader": "^0.9.1",
     "mocha": "^1.21.4",
     "power-assert": "^0.9.0"
   },
