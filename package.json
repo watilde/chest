@@ -1,6 +1,6 @@
 {
   "name": "chest",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "The easy metafile manager",
   "main": "lib/main.js",
   "bin": {
@@ -28,7 +28,7 @@
   "devDependencies": {
     "chai": "^1.9.2",
     "espower-loader": "^0.9.1",
-    "mocha": "^1.21.5",
+    "mocha": "^2.0.1",
     "power-assert": "^0.9.0"
   },
   "dependencies": {
