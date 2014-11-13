@@ -4,9 +4,10 @@ The Easy Metafile Manager
 
 ## Badges
 + [![NPM Version](http://img.shields.io/npm/v/chest.svg)](https://www.npmjs.org/package/chest)
++ [![NPM Downloads](http://img.shields.io/npm/dm/chest.svg)](https://www.npmjs.org/package/chest)
 + [![Build Status](https://api.travis-ci.org/watilde/chest.svg)](https://travis-ci.org/watilde/chest)
 + [![Dependency Status](https://gemnasium.com/watilde/chest.svg)](https://gemnasium.com/watilde/chest)
-+ [![MIT LICENSE](http://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/watilde/chest/blob/master/LICENSE)
++ [![MIT LICENSE](http://img.shields.io/npm/l/chest.svg)](https://github.com/watilde/chest/blob/master/LICENSE)
 
 
 ## Install
