@@ -1,6 +1,6 @@
 {
   "name": "chest",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "The easy metafile manager",
   "main": "lib/main.js",
   "bin": {
@@ -37,6 +37,6 @@
     "diff": "^1.2.0",
     "inquirer": "^0.8.0",
     "underscore": "^1.7.0",
-    "update-notifier": "^0.2.2"
+    "update-notifier": "^0.3.0"
   }
 }
