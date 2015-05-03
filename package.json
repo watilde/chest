@@ -26,17 +26,17 @@
   },
   "homepage": "http://chestjs.com",
   "devDependencies": {
-    "chai": "^2.2.0",
+    "chai": "^2.3.0",
     "espower-loader": "^0.10.0",
     "mocha": "^2.2.4",
-    "power-assert": "^0.10.2"
+    "power-assert": "^0.11.0"
   },
   "dependencies": {
     "async": "^0.9.0",
-    "colors": "^1.0.3",
+    "colors": "^1.1.0",
     "diff": "^1.2.2",
-    "inquirer": "^0.8.0",
+    "inquirer": "^0.8.3",
     "underscore": "^1.8.3",
-    "update-notifier": "^0.3.2"
+    "update-notifier": "^0.4.0"
   }
 }
