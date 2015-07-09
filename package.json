@@ -32,7 +32,7 @@
     "power-assert": "^0.11.0"
   },
   "dependencies": {
-    "async": "^0.9.0",
+    "async": "^1.3.0",
     "colors": "^1.1.0",
     "diff": "^1.2.2",
     "inquirer": "^0.8.3",
