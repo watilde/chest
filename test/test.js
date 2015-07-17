@@ -44,13 +44,6 @@ describe('chest', function() {
     assert.notEqual(files.indexOf(dummy_file_name), -1);
     assert.notEqual(files.indexOf(dummy_chest_json), -1);
   });
-  it('run chest-run-scripts', function(done) {
-    chest.run('answer', done);
-  });
-  it('check chest-run-scripts', function() {
-    var files = fs.readdirSync('./');
-    assert.notEqual(files.indexOf('42'), -1);
-  });
   it('sync meta info', function(done) {
     var bower = fs.readFileSync('./.chest/bower.json');
     var fixture = JSON.stringify(bower_json, 2, 2);
@@ -87,7 +80,6 @@ describe('chest', function() {
   });
   after(function() {
     fs.rmdirSync('.chest');
-    fs.unlinkSync('42');
     fs.writeFileSync(
       './bower.json',
       JSON.stringify(bower_json, 2, 2)
