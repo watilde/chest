@@ -54,7 +54,7 @@ index.js package.json metafile_a metafile_b
 
 $ chest put metafile_a metafile_b
 
-$ ls -la
+$ ls
 .chest index.js package.json
 
 $ chest list
