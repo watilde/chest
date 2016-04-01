@@ -4,7 +4,7 @@
   "description": "The easy metafile manager",
   "main": "lib/main.js",
   "bin": {
-    "chest": "./bin/chest.js"
+    "chest": "./bin/chest-cli.js"
   },
   "scripts": {
     "pretest": "standard",
