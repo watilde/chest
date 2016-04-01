@@ -73,5 +73,11 @@ test('clean', function (t) {
   if (fs.existsSync('.chest')) {
     rimraf.sync('.chest')
   }
+  if (fs.existsSync(dummy_bower_json)) {
+    rimraf.sync(dummy_bower_json)
+  }
+  if (fs.existsSync(dummy_file_name)) {
+    rimraf.sync(dummy_file_name)
+  }
   t.end()
 })
