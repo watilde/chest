@@ -1,5 +1,6 @@
 'use strict'
 var fs = require('fs')
+var rimraf = require('rimraf')
 var test = require('tap').test
 var chest = require('../lib/main')
 var dummy_file_name = 'metafile'
@@ -13,11 +14,15 @@ var silent = true
 
 test('setup', function (t) {
   if (fs.existsSync('.chest')) {
-    fs.rmdirSync('.chest')
+    rimraf.sync('.chest')
   }
   fs.writeFileSync(
-    './bower.json',
+    dummy_bower_json,
     JSON.stringify(bower_json, 2, 2)
+  )
+  fs.writeFileSync(
+    dummy_file_name,
+    'Hello World!'
   )
   t.end()
 })
@@ -65,10 +70,8 @@ test('take dummy bower.json', function (t) {
 })
 
 test('clean', function (t) {
-  fs.rmdirSync('.chest')
-  fs.writeFileSync(
-    './bower.json',
-    JSON.stringify(bower_json, 2, 2)
-  )
+  if (fs.existsSync('.chest')) {
+    rimraf.sync('.chest')
+  }
   t.end()
 })
