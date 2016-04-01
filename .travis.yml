@@ -4,4 +4,12 @@ script:
 language: node_js
 
 node_js:
-  - 0.10
+  - "5"
+  - "4"
+  - iojs
+  - "0.12"
+
+sudo: false
+cache:
+  directories:
+    - node_modules
