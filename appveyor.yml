@@ -13,4 +13,7 @@ test_script:
   - npm --version
   # run tests
   - npm test
+cache:
+  - node_modules                    # local npm modules
+  - '%APPDATA%\npm-cache'             # npm cache
 build: off
