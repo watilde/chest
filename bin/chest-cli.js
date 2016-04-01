@@ -1,4 +1,4 @@
-'use strict'
+#!/usr/bin/env node
 var chest = require('./main')
 var pkg = require('../package.json')
 var updateNotifier = require('update-notifier')
