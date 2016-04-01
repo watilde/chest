@@ -33,11 +33,11 @@ Usage: chest <command>
 
 Commands:
 
-  put [files]   Put specified config file in the chest
-  take [files]  Take specified config file from the chest into the project root
-  list          Show list of config files in the chest
-  open          Place config files from the chest into the project root as symbolic links
-  close         Remove symbolic links created by "open"
+  put [files...]   Put specified config file in the chest
+  take [files...]  Take specified config file from the chest into the project root
+  list             Show list of config files in the chest
+  open             Place config files from the chest into the project root as symbolic links
+  close            Remove symbolic links created by "open"
 
 Options:
 
