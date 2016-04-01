@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var chest = require('./main')
+var chest = require('../lib/main')
 var pkg = require('../package.json')
 var updateNotifier = require('update-notifier')
 var program = require('commander')
