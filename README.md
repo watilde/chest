@@ -9,23 +9,6 @@ The Easy Metafile Manager
 + [![Dependency Status](https://gemnasium.com/watilde/chest.svg)](https://gemnasium.com/watilde/chest)
 + [![MIT LICENSE](http://img.shields.io/npm/l/chest.svg)](https://github.com/watilde/chest/blob/master/LICENSE)
 
-## Example
-```
-$ ls
-index.js package.json metafile_a metafile_b
-
-$ chest put metafile_a metafile_b
-
-$ ls -la
-.chest index.js package.json
-
-$ chest list
-metafile_a metafile_b
-
-$ chest open
-.chest index.js package.json metafile_a metafile_b
-```
-
 ## Usage
 ```
 Usage: chest <command>
@@ -43,6 +26,49 @@ Options:
 
   -h, --help     output usage information
   -V, --version  output the version number
+```
+
+## Examples
+chest command is here to support you to take and put files to a directory called `.chest` easily. Here are some use cases.
+
+### dotfiles
+Manage your dotfiles:
+```
+$ git clone git@github.com:your/dotfiles.git .chest
+
+$ ls
+.chest
+
+$ ls .chest
+.emacs.d .tmux.conf .vimrc .zshrc
+
+$ chest open
+.emacs.d .chest .tmux.conf .vimrc .zshrc
+```
+
+### metafiles
+Manage metafiles:
+```
+$ ls
+index.js package.json metafile_a metafile_b
+
+$ chest put metafile_a metafile_b
+
+$ ls -la
+.chest index.js package.json
+
+$ chest list
+metafile_a metafile_b
+
+$ chest open
+.chest index.js package.json metafile_a metafile_b
+```
+
+## chestignore
+To ignore some files, you need to add `.chestignore`.
+```
+.git
+.gitignore
 ```
 
 ## Install
