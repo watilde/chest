@@ -26,7 +26,7 @@
           </p>
         </header>
         <section class="cst">
-          <h2 class="hlh2">Why Use a Metafile Manager?</h2>
+          <h2 class="hlh2">Why use a metafile manager?</h2>
           <p><b>Reduce the cost of managing numerous metafiles</b></p>
           <p>
             npm, grunt, bower, gulp, component, jshint, editorconfig, travis, saucelab, and the list goes on
@@ -36,11 +36,38 @@
           <p><b>Enter chest.js</b></p>
         </section>
         <section class="cst">
+          <h2 class="hlh2">Manage your dotfiles</h2>
+          <div class="row">
+            <b>Bring your dotfiles to your local as "~/.chest" direcotry:</b>
+            <br />
+            <pre>$ cd ~
+$ git clone git@github.com:your/dotfiles.git .chest</pre>
+            <div class="col-md-5 flL">
+              <img src="assets/img/chest.png" class="chest" />
+            </div>
+            <div class="col-md-7 flR">
+              <p>By running this, your dotfiles will be rolled out to your home directory as a symlink file:</p>
+              <pre>$ ls
+.chest
+
+$ ls .chest
+README.md .emacs.d .chestignore
+.git .gitignore .tmux.conf .vim .vimrc .zshrc
+
+$ chest open
+.emacs.d .chest .tmux.conf .vim .vimrc .zshrc
+</pre>
+            </div>
+          </div>
+          <h3 class="hlh3">.chestignore❓</h3>
+          <p>You can ignore some files like .git, .gitignore and README.md by .chestignore:</p>
+          <pre>README.md
+.git
+.gitignore</pre>
+        </section>
+        <section class="cst">
           <h2 class="hlh2">Getting Started</h2>
           <p><a href="https://github.com/watilde/chest/blob/master/README.md">README.md</a> contains more detailed instructions on using chest in your projects.<p>
-          <div class="taC">
-            <img src="assets/img/chest.png" class="chest" />
-          </div>
         </section>
       <section class="taC">
         <div class="inner">
