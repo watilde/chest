@@ -68,6 +68,7 @@ $ chest open
 ## chestignore
 To ignore some files, you need to add `.chestignore`.
 ```
+README.md
 .git
 .gitignore
 ```
