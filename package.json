@@ -8,7 +8,8 @@
   },
   "scripts": {
     "pretest": "standard",
-    "test": "cd test && tap ."
+    "test": "cd test && tap .",
+    "preversion": "npm test"
   },
   "repository": {
     "type": "git",
