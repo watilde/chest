@@ -36,7 +36,7 @@
     "async-each-series": "^1.1.0",
     "commander": "^2.9.0",
     "diff": "^2.0.2",
-    "inquirer": "^0.12.0",
+    "inquirer": "^1.0.1",
     "update-notifier": "^0.6.3"
   }
 }
