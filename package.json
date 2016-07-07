@@ -1,6 +1,6 @@
 {
   "name": "chest",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "The easy metafile manager",
   "main": "lib/main.js",
   "bin": {
