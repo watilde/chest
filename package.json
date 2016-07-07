@@ -29,7 +29,7 @@
   "homepage": "http://chestjs.com",
   "devDependencies": {
     "rimraf": "^2.5.2",
-    "standard": "^6.0.8",
+    "standard": "^7.1.2",
     "tap": "^6.1.1"
   },
   "dependencies": {
