@@ -2,22 +2,22 @@
 var fs = require('fs')
 var test = require('tap').test
 var chest = require('../lib/main')
-var dummy_file_name = 'metafile'
-var dummy_bower_json = 'bower.json'
+var dummyFileName = 'metafile'
+var dummyBowerJson = 'bower.json'
 var chestignore = '.chestignore'
 var silent = true
 
 test('put dummy config_file', function (t) {
-  chest.put([dummy_file_name], silent)
+  chest.put([dummyFileName], silent)
   var files = fs.readdirSync('./.chest')
-  t.notEqual(files.indexOf(dummy_file_name), -1)
+  t.notEqual(files.indexOf(dummyFileName), -1)
   t.end()
 })
 
 test('put dummy bower.json', function (t) {
-  chest.put([dummy_bower_json], silent)
+  chest.put([dummyBowerJson], silent)
   var files = fs.readdirSync('./.chest')
-  t.notEqual(files.indexOf(dummy_bower_json), -1)
+  t.notEqual(files.indexOf(dummyBowerJson), -1)
   t.end()
 })
 

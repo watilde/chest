@@ -2,10 +2,10 @@
 var fs = require('fs')
 var rimraf = require('rimraf')
 var test = require('tap').test
-var dummy_file_name = 'metafile'
-var dummy_bower_json = 'bower.json'
+var dummyFileName = 'metafile'
+var dummyBowerJson = 'bower.json'
 var chestignore = '.chestignore'
-var bower_json = {
+var bowerJson = {
   name: 'name',
   description: 'description',
   version: 'version'
@@ -16,16 +16,16 @@ test('setup', function (t) {
     rimraf.sync('.chest')
   }
   fs.writeFileSync(
-    dummy_bower_json,
-    JSON.stringify(bower_json, 2, 2)
+    dummyBowerJson,
+    JSON.stringify(bowerJson, 2, 2)
   )
   fs.writeFileSync(
-    dummy_file_name,
+    dummyFileName,
     'Hello World!'
   )
   fs.writeFileSync(
     chestignore,
-    dummy_file_name
+    dummyFileName
   )
   t.end()
 })
